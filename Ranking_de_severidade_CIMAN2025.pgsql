@@ -46,7 +46,7 @@ FROM (
 			AND ti.geom IS NULL
 			AND incra_quilom.geom IS NULL
 			AND incra_assent.geom IS NULL
-            --AND --uf.sg_uf = 'TO' -- Filtro para a UF	(Habilitar se necessário)		
+            --AND uf.sg_uf = 'TO' -- Filtro para a UF	(Habilitar se necessário)		
         ORDER BY 
             mv.id_evento, mv.dt_passagem DESC
 ) AS sub   
